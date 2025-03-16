@@ -163,4 +163,10 @@ a:hover {
     .contact-text {
         font-size: 18px
     }
+
+    .address p {
+        color: #F1E9D2;
+        font-size: 1rem;
+        padding: 0 16px;
+    }
 }
