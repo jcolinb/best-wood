@@ -94,6 +94,7 @@ a:hover {
     border: #016611 ridge 2px;
     border-radius: 6px;
     padding: 4px 8px;
+    text-align: center;
 }
 
 .cta:hover {
@@ -110,16 +111,18 @@ a:hover {
 .bio-box {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 12px;
+    gap: 24px;
 }
 
 .bio-box p {
-    font-size: 22px;
+    font-size: 26px;
 }
 
 #photos {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 100%;
     gap: 40px;
 }
 
@@ -127,6 +130,11 @@ a:hover {
     border-radius: 12px;
     object-fit: cover;
     width: 100%;
+    max-height: 600px;
+}
+
+.offset-img {
+    translate: 0 -25%;
 }
 
 @media screen and (max-width: 800px) {
@@ -155,5 +163,9 @@ a:hover {
 
     h1 {
         font-size: 3rem;
+    }
+
+    .offset-img {
+        translate: 0;
     }
 }
