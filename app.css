@@ -90,32 +90,23 @@ a:hover {
 .cta {
     background-color: transparent;
     font-size: 1.25rem;
-    color: #016611;
-    border: #016611 ridge 2px;
+    color: #382901;
+    border: #382901 ridge 2px;
     border-radius: 6px;
     padding: 4px 8px;
     text-align: center;
 }
 
 .cta:hover {
-    border: #816611 double 2px;
-    background-color: #816611;
-    color: #016611;
+    border: #382901 double 2px;
+    background-color: #382901;
+    color: #F1E9D2;
     border-radius: 6px;
 }
 
-#bio {
-    color: #382901;
-}
-
-.bio-box {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 24px;
-}
-
-.bio-box p {
+.bio-text {
     font-size: 26px;
+    color: #382901;
 }
 
 #photos {
@@ -134,14 +125,14 @@ a:hover {
 }
 
 .offset-img {
-    translate: 0 -25%;
+    translate: 0 -20%;
+}
+
+.contact-text {
+    font-size: 24px
 }
 
 @media screen and (max-width: 800px) {
-    .bio-box {
-        grid-template-columns: 1fr;
-    }
-
     .container{
         padding: 16px;
     }
@@ -150,7 +141,7 @@ a:hover {
         display: none;
     }
 
-    .bio-box p {
+    .bio-text {
         font-size: 18px;
     }
 
@@ -167,5 +158,9 @@ a:hover {
 
     .offset-img {
         translate: 0;
+    }
+
+    .contact-text {
+        font-size: 18px
     }
 }
