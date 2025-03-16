@@ -1,0 +1,159 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    display: grid;
+    font-family: Geneva,serif;
+    margin:0;
+    padding:0;
+    background-color: #F1E9D2;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size:6rem;
+    font-weight: bold;
+    -webkit-text-stroke: 3px #F1E9D2;
+    margin:0;
+    color: transparent;
+    font-family: "Futura", sans-serif;
+}
+
+h2 {
+    font-size:40px;
+    margin:0;
+    color: #382901;
+    font-family: "Courier New", serif;
+    font-weight: lighter;
+    margin-bottom: 32px;
+    margin-top: 64px;
+}
+
+h3 {
+    font-size:32px;
+    margin:0;
+    color: #382901;
+    font-family: "Courier New", serif;
+    font-weight: lighter;
+}
+
+p {
+    margin:0;
+    color: #382901;
+}
+
+a {
+    color: #016611;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #816611;
+}
+
+.overlay {
+    padding: 60px 60px 100px 60px;
+    background-color: black;
+    opacity: 75%;
+}
+
+.overlay h1 {
+    padding: 12px 0;
+}
+
+.address p {
+    color: #F1E9D2;
+    font-size: 1.25rem;
+    padding: 0 16px;
+}
+
+#hero {
+    display: grid;
+    position: relative;
+    background-image: url("https://kz-stylist.s3.us-east-2.amazonaws.com/assets/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    border-bottom: solid #F1E9D2 5px;
+}
+
+.container {
+    padding: 24px;
+    display: grid;
+    gap: 48px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta {
+    background-color: transparent;
+    font-size: 1.25rem;
+    color: #016611;
+    border: #016611 ridge 2px;
+    border-radius: 6px;
+    padding: 4px 8px;
+}
+
+.cta:hover {
+    border: #816611 double 2px;
+    background-color: #816611;
+    color: #016611;
+    border-radius: 6px;
+}
+
+#bio {
+    color: #382901;
+}
+
+.bio-box {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 12px;
+}
+
+.bio-box p {
+    font-size: 22px;
+}
+
+#photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.photo {
+    border-radius: 12px;
+    object-fit: cover;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .bio-box {
+        grid-template-columns: 1fr;
+    }
+
+    .container{
+        padding: 16px;
+    }
+
+    .hidden-on-mobile {
+        display: none;
+    }
+
+    .bio-box p {
+        font-size: 18px;
+    }
+
+    #photos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+}
